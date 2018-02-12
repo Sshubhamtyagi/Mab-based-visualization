@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+        <style>
+            #cen{text-align: center;}
+            footer{text-align: center;
+            padding: 10px 0;
+            background-color: #101010;
+            color: #9d9d9d;
+            bottom: 0;
+            width: 100%;}
+        </style>
+    </head>
+    <body>
+         <div class="navbar navbar-inverse ">
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                    </button>
+                <a href="index.html" class="navbar-brand">Tiger Reserve</a>
+            </div>
+                <div class="navbar-collapse collapse id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Signup</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    </ul>
+                </div>
+         </div>
+        <div class="row row_style">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"></div>
+                            <div class="panel-body">
+                                <p class="text-warning"><h2 id="cen">Login to Add Data</h2></p>
+                            <br><br><br>
+                             <div class="col-xs-4">
+                                
+                            </div>
+                            <div class="col-xs-4">
+                            <form>
+                <div class="form-group">
+                    <label for="Email">E-mail:</label>
+                    <input type="text" class="form-control" name="Email" placeholder="E-mail"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Password"><br><br>
+                    <input type="submit"  value="login" name="login_button" class="btn btn-primary form-control">
+                       
+                    
+                           
+                </div>
+                         </form>
+                            </div>
+                            </div>
+                            <div class="panel-footer" id="cen">
+                                <a href="signup.html" > <b>  Don't have an account? Register</b></a>
+                            </div>
+                        </div></div>
+            <footer>
+            <div class="container">
+             Copyright © Tiger Reserve.All Rights Reserved | Contact Us:+91 99936 24684   
+            </div>
+        </footer>   
+    </body>

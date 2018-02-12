@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    
+        <title>Maps</title>
+        <link  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
+
+
+        <style>
+            footer{text-align: center;
+            padding: 10px 0;
+            background-color: #101010;
+            color: #9d9d9d;
+            bottom: 0;
+            width: 100%;}
+        </style>
+        
+    </head>
+    <body>
+        <style>
+    #menu {
+      
+        background: #fff;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    #features {
+    width: 30%;
+    margin-left: 50%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+#list{width: 25%;
+    //margin-left: 50%;
+    font-family: sans-serif;
+    //overflow-y: scroll;
+    background-color: #fafafa;
+    
+}
+section {
+    padding:  25px 50px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.25;
+    font-size: 13px;
+}
+section.active {
+    opacity: 1;
+}
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+}
+
+</style>
+<style>
+    #fly {
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        width: 30%;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        background: #ee8a65;
+    }
+</style>
+
+          <div class="navbar navbar-inverse ">
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                    </button>
+                <a href="index.html" class="navbar-brand">Tiger Reserve</a>
+            </div>
+                <div class="navbar-collapse collapse id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                        <li><a href="settings.html"><span class="glyphicon glyphicon-user"></span>Settings</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span>LogOut</a></li>
+                    </ul>
+                </div>
+         </div>
+<div class="container">
+
+            <div class="jumbotron">
+
+                <h1>Tiger Reserves In India</h1>
+
+                <p>Look at the tigers mighty and strong, killing them for their skin is very wrong.</p>
+
+            </div></div>
+
+
+
+        <div id='map' style='width: 1200px; height: 470px; float: left'></div>
+        <button id='fly'>Next Reserve</button>
+        
+         <div id='menu'>
+    <input id='streets' type='radio' name='rtoggle' value='streets' checked='checked'>
+    <label for='streets'>streets</label>
+     <input id='basic' type='radio' name='rtoggle' value='basic' >
+    <label for='basic'>basic</label>
+   
+    <input id='satellite' type='radio' name='rtoggle' value='satellite'>
+    <label for='satellite'>satellite</label>
+</div>
+        
+        
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic3NodWJoYW03ODM0IiwiYSI6ImNqZDh1eG9oaDB1ankyd28yMGM3dHoxdnAifQ.JCkUJOF2F1y-4yYcwO7VlQ';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v10',
+    zoom:3,
+    center: [81.0242,23.7225],
+    bearing: 10,
+    pitch: 45
+  });
+  map.addControl(new mapboxgl.NavigationControl());
+  var layerList = document.getElementById('menu');
+var inputs = layerList.getElementsByTagName('input');
+
+function switchLayer(layer) {
+    var layerId = layer.target.id;
+    map.setStyle('mapbox://styles/mapbox/' + layerId + '-v9');
+}
+
+for (var i = 0; i < inputs.length; i++) {
+    inputs[i].onclick = switchLayer;
+}
+
+  var j=0;
+  document.getElementById('fly').addEventListener('click', function () {
+    // Fly to a random location by offsetting the point -74.50, 40
+    // by up to 5 degrees.
+    if(j%8==0)
+    {
+    map.flyTo({
+        zoom:11,
+        speed:0.3,
+        center: [78.7746,29.53]
+        
+    });}
+else if(j%8==1)
+{map.flyTo({
+        zoom:11,
+        speed:0.3,
+    center:[80.6115,22.345]
+    });
+}
+else if(j%8==2)
+{map.flyTo({
+        zoom:11,
+        speed:0.3,
+    center:[93.167046,26.575863]
+    });
+    
+}
+else if(j%8==3)
+{map.flyTo({
+        zoom:11,
+        speed:0.3,
+    center:[76.1734,12.1537]
+    });
+    
+}
+else if(j%8==4)
+{map.flyTo({
+        zoom:11,
+        speed:0.3,
+    center:[77.10,10.05]
+    });
+    
+}
+else if(j%8==5)
+{map.flyTo({
+        zoom:11,
+        speed:0.3,
+    center:[91.020324,26.74599]
+    });
+    
+}
+else if(j%8==6)
+{map.flyTo({
+        zoom:11,
+        speed:0.3,
+    center:[92.877664,26.932489]
+    });
+    
+}
+else 
+{map.flyTo({
+        zoom:11,
+        speed:0.3,
+    center:[81.0242,23.7225]
+    });
+    
+}
+if(j==7)
+    j=0;
+else
+j++;
+
+});
+  
+
+map.on('load', function() {
+
+    // Add a layer showing the places.
+    map.addLayer({
+        "id": "places",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [{
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>Bandhavgarh National Park</strong><p>Established 1968 ,Area:446 km^2<br>Notability : 1336 species of endemic plants</p>",
+                        "icon": "star"
+                        
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [81.0242,23.7225]
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>Jim Corbett National Park</strong><p>Established 1936 ,Area:1318.5 km^2<br>Notability : First national park in India (established in 1936 as Hailey National Park)</p>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [78.7746,29.53]
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>Kanha Tiger Reserve</strong><p>Established 1955 ,Area:940 km^2</p>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [80.6115,22.345]
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>Kaziranga National Park</strong><p>Established 1974 ,Area:858 km^2<br>Notability : Highest known tiger density in the World Indian rhinoceros, UNESCO World Heritage Site</p>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [93.167046,26.575863]
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>Nagarhole National Park</strong><p>Established 1988 ,Area:643 km^2<</p>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [76.1734,12.1537]
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>Eravikulam National Park</strong><p>Established 1978 ,Area:97 km^2</p>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [77.10,10.05]
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>Manas National Park</strong><p>Established 1990 ,Area:950 km^2<br>Notability: UNESCO World heritage Site</p>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [91.020324,26.74599]
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<strong>Nameri National Park</strong><p>Established 1978 ,Area:137 km^2</p>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [92.877664,26.932489]
+                    }
+                }]
+            }
+        },
+        "layout": {
+            "icon-image": "{icon}-15",
+            "icon-allow-overlap": true
+        }
+    });
+
+    // Create a popup, but don't add it to the map yet.
+    var popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+    }
+            );
+
+    map.on('mouseenter', 'places', function(e) {
+        // Change the cursor style as a UI indicator.
+        map.getCanvas().style.cursor = 'pointer';
+
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        popup.setLngLat(e.features[0].geometry.coordinates)
+            .setHTML(e.features[0].properties.description)
+            .addTo(map);
+    });
+
+    map.on('mouseleave', 'places', function() {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+    });
+    
+});
+</script>
+    <!div class="col-xs-6">
+    
+            <div class="row text-center">
+
+                <div class=" col-sm-3">
+
+                    <div class="thumbnail">
+
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Royal_Bengal_Tiger_at_Kanha_National_Park.jpg/1200px-Royal_Bengal_Tiger_at_Kanha_National_Park.jpg" class="img-responsive img-circle"><div class="caption">
+
+                            <h3>Bandhavgarh National Park</h3>
+
+                            <p>Bandhavgarh has one of the highest density of Bengal tigers known in the...</p>
+
+                            <a href="np1.html" class="btn btn-primary btn-block">Read More</a>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+                <div class="col-sm-3">
+
+                    <div class="thumbnail">
+
+                        <img src="https://static.pexels.com/photos/46251/sumatran-tiger-tiger-big-cat-stripes-46251.jpeg" class="img-responsive img-circle"><div class="caption">
+
+                            <h3>Jim Corbett National Park</h3>
+
+                            <p>Bengal tigers, although plentiful, are not easily spotted due to the abundance of foliage - camouflage - in...</p>
+
+                            <a href="np2.html" class="btn btn-primary btn-block">Read More</a>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+                <div class=" col-sm-3">
+
+                    <div class="thumbnail">
+
+                        <img src="https://www.wwf.org.uk/sites/default/files/styles/hero_m/public/2017-05/Medium_WW226367.jpg?h=10d202d3&itok=ehY04_aG" class="img-responsive img-circle"><div class="caption">
+
+                            <h3>Kanha Tiger Reserve</h3>
+
+                            <p>Kanha Tiger Reserve has species of tigers, leopards, wild dogs, wild cats, foxes and jackals. Among the deer species...</p>
+
+                            <a href="np3.html" class="btn btn-primary btn-block">Read More</a>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+                <div class=" col-sm-3">
+
+                    <div class="thumbnail">
+
+                        <img src="https://c402277.ssl.cf1.rackcdn.com/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942" class="img-responsive img-circle"><div class="caption">
+
+                            <h3>Kaziranga National Park</h3>
+
+                            <p>Kaziranga is one of the few wild breeding areas outside Africa for multiple species of large cats, such as Bengal tigers...</p>
+
+                            <a href="np4.html" class="btn btn-primary btn-block">Read More</a>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+            <div class="row text-center">
+
+                <div class=" col-sm-3">
+
+                    <div class="thumbnail">
+
+                        <img src="https://d2391rlyg4hwoh.cloudfront.net/img/vijay_direct_sighting_1_copy_3_vijaya_kumar_k_40146.jpg" class="img-responsive img-circle"><div class="caption">
+
+                            <h3>Nagarhole National Park</h3>
+
+                            <p>The park protects the wildlife of Karnataka. The important predators and carnivores in Nagarhole National Park....</p>
+
+                            <a href="np5.html" class="btn btn-primary btn-block">Read More</a>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+                <div class=" col-sm-3">
+
+                    <div class="thumbnail">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75EmOs_4WKuV8RDzZsfD3EbTyrF0I6rrR-9lFB4pJjNSoSJi0pw" class="img-responsive img-circle"><div class="caption">
+
+                            <h3>Eravikulam National Park</h3>
+
+                            <p>Twenty six species of mammals have been recorded in the park including the largest surviving population of Nilgiri tahr,[5] estimated....</p>
+
+                            <a href="np6.html" class="btn btn-primary btn-block">Read More</a>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+                <div class=" col-sm-3">
+
+                    <div class="thumbnail">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRQ2LZU1dVg1KlS82n6N2cNpO3m3itsGIBF5M8rYctJ53Fnj7" class="img-responsive img-circle"><div class="caption">
+
+                            <h3>Manas National Park</h3>
+
+                            <p>The sanctuary has recorded 55 species of mammals, 380 species of birds, 50 of reptiles, and 3 species of amphibians.
+           ...</p>
+
+                            <a href="np7.html" class="btn btn-primary btn-block">Read More</a>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+                <div class=" col-sm-3">
+
+                    <div class="thumbnail">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVR7L28jDkYwzq9Vcd-P5DObzBqA4SLPD4_sKp0EVdZXC_GL70vQ" class="img-responsive img-circle"><div class="caption">
+
+                            <h3>Nameri National Park</h3>
+
+                            <p>This is excellent elephant country and was considered to be an elephant reserve. It is an ideal habitat for a host of other
+           ....</p>
+
+                            <a href="np8.html" class="btn btn-primary btn-block">Read More</a>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+            </div>
+
+        
+            <footer>
+            <div class="container">
+             Copyright © Tiger Reserve.All Rights Reserved | Contact Us:+91 99936 24684   
+            </div>
+        </footer>   
+        
+    </body>

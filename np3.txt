@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+        <style>
+            #cen{text-align: center;}
+            footer{text-align: center;
+            padding: 10px 0;
+            background-color: #101010;
+            color: #9d9d9d;
+            bottom: 0;
+            width: 100%;}
+            #features {
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+        </style>
+    </head>
+    <body>
+         <div class="navbar navbar-inverse ">
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                    </button>
+                <a href="index.html" class="navbar-brand">Tiger Reserve</a>
+            </div>
+                <div class="navbar-collapse collapse id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Signup</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    </ul>
+                </div>
+         </div>
+        
+
+<div class="container" style=' height: 800px'>
+  <div class="jumbotron">
+    <h1>Kanha Tiger Reserve</h1>      
+    <p>Kanha Tiger Reserve has species of tigers, leopards, wild dogs, wild cats, foxes and jackals. Among the deer species, 
+            swamp deer (Cervus duavcelli branderi) or hard ground barasingha is pride of the place as it is the only subspecies of
+            swamp deer in India, except the Great Swamp Deer of Sundarbans . The animal is adapted to hard ground unlike swamp deer
+            of the north which live in marshy swamps. The reserve has been instrumental in rescuing the swamp deer from extinction. 
+            Indian gaur (Bos guarus), belonging to the ox genus, is found in Kanha but seen mostly as winter ends. In summer gaur 
+            inhabit meadows and water holes in the park.[citation needed]
+Other commonly seen animals in the park include the spotted deer, sambar, barking deer and the four-horned antelope. The latter 
+can be seen at Bamni Dadar climb. Recently, mouse deer have also been discovered in the tiger reserve.[citation needed]</p>
+  </div> 
+</div>
+        <div id="features" style='height: 400px'>
+                <img src="http://indochinesetigerprofilereport.weebly.com/uploads/5/9/2/9/59293731/3120225_orig.jpg" class="media-object" alt="Sample Image">
+           
+                
+           </div>
+       <div class=""   
+            <div class="container">            
+                <div class="media">
+                  <iframe width="1070" height="400" src="https://www.youtube.com/embed/SUHTqg09aRA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+            
+    <footer>
+            <div class="container">
+             Copyright © Tiger Reserve.All Rights Reserved | Contact Us:+91 99936 24684   
+            </div>
+        </footer>   
+    </body>

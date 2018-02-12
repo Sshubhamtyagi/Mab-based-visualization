@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+        <style>
+            #cen{text-align: center;}
+            footer{text-align: center;
+            padding: 10px 0;
+            background-color: #101010;
+            color: #9d9d9d;
+            bottom: 0;
+            width: 100%;}
+            #features {
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+        </style>
+    </head>
+    <body>
+         <div class="navbar navbar-inverse ">
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                    </button>
+                <a href="index.html" class="navbar-brand">Tiger Reserve</a>
+            </div>
+                <div class="navbar-collapse collapse id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Signup</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    </ul>
+                </div>
+         </div>
+        
+
+<div class="container" style=' height: 800px'>
+  <div class="jumbotron">
+    <h1>Nagarhole National Park </h1>      
+    <p>The park protects the wildlife of Karnataka. The important predators and carnivores in Nagarhole National Park 
+            are the Bengal tiger, Indian leopard, Ussuri dhole (Cuon alpinus alpinus), sloth bear and the striped hyena 
+            (Hyaena hyaena). The herbivores are chital, sambar deer, barking deer, four-horned antelope (Tetracercus quadricornis), 
+            gaur (Bos gaurus), wild boar (Sus scrofa) and Indian elephant. Nagarhole National Park provides an opportunity to see some 
+            of the southern population of gaur (jungle bison). Also, this park in Karnataka is a good place to see elephants in the luxuriant 
+            forests and bamboo thickets which they most enjoy. Their total population in southern India is now about 6500, nearly all living in
+            the area where Karnataka, Tamil Nadu and Kerala adjoin in the shadow of the Western Ghats.</p>
+  </div> 
+</div>
+        <div id="features" style='height: 400px'>
+                <img src="https://sites.google.com/site/siberiantigerms2013/_/rsrc/1369434760498/endangered-species/sib%20graph.PNG" class="media-object" alt="Sample Image">
+           
+                
+           </div>
+       <div class=""   
+            <div class="container">            
+                <div class="media">
+                   <iframe width="1070" height="400" src="https://www.youtube.com/embed/A8pxDOj3o6s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+            
+    <footer>
+            <div class="container">
+             Copyright © Tiger Reserve.All Rights Reserved | Contact Us:+91 99936 24684   
+            </div>
+        </footer>   
+    </body>

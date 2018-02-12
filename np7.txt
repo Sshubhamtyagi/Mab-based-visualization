@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+        <style>
+            #cen{text-align: center;}
+            footer{text-align: center;
+            padding: 10px 0;
+            background-color: #101010;
+            color: #9d9d9d;
+            bottom: 0;
+            width: 100%;}
+            #features {
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+        </style>
+    </head>
+    <body>
+         <div class="navbar navbar-inverse ">
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                    </button>
+                <a href="index.html" class="navbar-brand">Tiger Reserve</a>
+            </div>
+                <div class="navbar-collapse collapse id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Signup</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    </ul>
+                </div>
+         </div>
+        
+
+<div class="container" style=' height: 800px'>
+  <div class="jumbotron">
+    <h1>Manas National Park</h1>      
+    <p>The sanctuary has recorded 55 species of mammals, 380 species of birds, 50 of reptiles, and 3 species of amphibians.
+            Out of these wildlife, 21 mammals are India’s Schedule I mammals and 31 of them are threatened.
+The fauna of the sanctuary include Indian elephants, Indian rhinoceros, gaurs, Asian water buffaloes, barasingha, Indian tigers, 
+Indian leopards, clouded leopards, Asian golden cats, dholes, capped langurs, golden langurs, Assamese macaques, slow loris, hoolock gibbons,
+smooth-coated otters, sloth bears, barking deers, hog deers, black panthers, sambar deers and chitals.</p>
+  </div> 
+</div>
+        <div id="features" style='height: 400px'>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF43Uhu_PDlNuK5iYR-NTIjtfoMXvBRgxxZkaWX8xg1qKmj1RvwQ" class="media-object" alt="Sample Image">
+           
+                
+           </div>
+       <div class=""   
+            <div class="container">            
+                <div class="media">
+                   <iframe width="1070" height="400" src="https://www.youtube.com/embed/rEjoNaX4IQU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+            
+    <footer>
+            <div class="container">
+             Copyright © Tiger Reserve.All Rights Reserved | Contact Us:+91 99936 24684   
+            </div>
+        </footer>   
+    </body>

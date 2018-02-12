@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+        <style>
+            #cen{text-align: center;}
+            footer{text-align: center;
+            padding: 10px 0;
+            background-color: #101010;
+            color: #9d9d9d;
+            bottom: 0;
+            width: 100%;}
+            #features {
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+        </style>
+    </head>
+    <body>
+         <div class="navbar navbar-inverse ">
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                    </button>
+                <a href="index.html" class="navbar-brand">Tiger Reserve</a>
+            </div>
+                <div class="navbar-collapse collapse id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Signup</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    </ul>
+                </div>
+         </div>
+        
+
+<div class="container" style=' height: 800px'>
+  <div class="jumbotron">
+    <h1>Kaziranga National Park</h1>      
+    <p>Kaziranga is one of the few wild breeding areas outside Africa for multiple species of large cats, such as Bengal tigers
+            and leopards.[20] Kaziranga was declared a Tiger Reserve in 2006 and has the highest density of tigers in the world (one per five km2),
+            with a population of 118, according to the latest census.[21] Other felids include the jungle cat, fishing cat, and leopard cat.[20] 
+            Small mammals include the rare hispid hare, Indian gray mongoose, small Indian mongooses, large Indian civet, small Indian civets,
+            Bengal fox, golden jackal, sloth bear, Chinese pangolin, Indian pangolins, hog badger, Chinese ferret badgers, and particoloured 
+            flying squirrel.[18][20][citation needed] Nine of the 14 primate species found in India occur in the park.[4] Prominent among them 
+            are the Assamese macaque, capped and golden langur, as well as the only ape found in India, the hoolock gibbon.[18][20][citation needed] 
+            Kaziranga's rivers are also home to the endangered Ganges dolphin.[citation needed]> 
+  </div></div>
+        <div id="features" style='height: 400px'>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuR78IL5vg3cAHO1hFGWawMOD9oWzTTWWFqaU3Uy6GobRZHHp0" class="media-object" alt="Sample Image">
+           
+                
+           </div>
+       <div class=""   
+            <div class="container">            
+                <div class="media">
+                   <iframe width="1070" height="400" src="https://www.youtube.com/embed/PclLXkPjZKg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+            
+    <footer>
+            <div class="container">
+             Copyright © Tiger Reserve.All Rights Reserved | Contact Us:+91 99936 24684   
+            </div>
+        </footer>   
+    </body>

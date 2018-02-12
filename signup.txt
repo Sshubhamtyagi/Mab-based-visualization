@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp</title>
+        <link  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+        <style>
+            #cen{text-align: center;}
+             footer{text-align: center;
+            padding: 10px 0;
+            background-color: #101010;
+            color: #9d9d9d;
+            bottom: 0;
+            width: 100%;}
+            </style>
+    </head>
+    <body>
+          <div class="navbar navbar-inverse ">
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                    </button>
+                <a href="index.html" class="navbar-brand">Tiger Reserve</a>
+            </div>
+                <div class="navbar-collapse collapse id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Signup</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    </ul>
+                </div>
+         </div>
+        <form>
+            <div class="form-group">
+                <h2 id="cen">SignUp</h2>
+                <div class="row row_style">
+                    <div class="col-xs-4">
+                    </div>
+                    <div class="col-xs-4">
+                        <input type="text" class="form-control" placeholder="Name" name="Name"><br>
+                        <input type="text" class="form-control" placeholder="E-mail" name="email"><br>
+                        <input type="password" class="form-control" placeholder="Password" name="password" ><br>
+                <input type="text" class="form-control" placeholder="Contact" name="contact"><br>
+                
+                <input type="text" class="form-control" placeholder="City" name="city"><br>
+                <input type="text" class="form-control" placeholder="Address" name="address"><br>
+                <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form><br><br><br>
+        <footer>
+            <div class="container">
+             Copyright © Tiger Reserve.All Rights Reserved | Contact Us:+91 99936 24684   
+            </div>
+        </footer>   
+    </body>

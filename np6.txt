@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link  href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+        <style>
+            #cen{text-align: center;}
+            footer{text-align: center;
+            padding: 10px 0;
+            background-color: #101010;
+            color: #9d9d9d;
+            bottom: 0;
+            width: 100%;}
+            #features {
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+        </style>
+    </head>
+    <body>
+         <div class="navbar navbar-inverse ">
+                <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                    </button>
+                <a href="index.html" class="navbar-brand">Tiger Reserve</a>
+            </div>
+                <div class="navbar-collapse collapse id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Signup</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    </ul>
+                </div>
+         </div>
+        
+
+<div class="container" style=' height: 800px'>
+  <div class="jumbotron">
+    <h1>Eravikulam National Park</h1>      
+    <p>Twenty six species of mammals have been recorded in the park including the largest surviving population of Nilgiri tahr,[5] estimated 
+            at about 750 individuals. The other ungulates are lion-tailed macaques, gaur, Indian muntjac and sambar deer. Golden jackal, jungle cat, 
+            wild dog, dhole, leopard and tiger are the main predators. Some little-known animals such as Nilgiri langur, stripe-necked mongoose,
+            Indian porcupine, Nilgiri marten, small clawed otter, ruddy mongoose, and dusky palm squirrel are also found.[6] Elephants make seasonal visits.
+132 species of birds have been recorded which include endemics like black-and-orange flycatcher, Nilgiri pipit, Nilgiri wood pigeon, 
+white bellied shortwing, Nilgiri flycatcher and Kerala laughingthrush.</p>
+  </div> 
+</div>
+        <div id="features" style='height: 400px'>
+                <img src="http://cdn.downtoearth.org.in/image/20050315/31-graph.jpg" class="media-object" alt="Sample Image">
+           
+                
+           </div>
+       <div class=""   
+            <div class="container">            
+                <div class="media">
+                   <iframe width="1070" height="400" src="https://www.youtube.com/embed/vYa8vFjbPoo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+        </div>
+            
+    <footer>
+            <div class="container">
+             Copyright © Tiger Reserve.All Rights Reserved | Contact Us:+91 99936 24684   
+            </div>
+        </footer>   
+    </body>
